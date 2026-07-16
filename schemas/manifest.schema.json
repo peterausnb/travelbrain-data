@@ -4,7 +4,7 @@
   "title": "TravelBrain distribution manifest",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "contentVersion", "generatedAt", "minimumAppSchemaVersion", "countries", "corridorsVersion"],
+  "required": ["schemaVersion", "contentVersion", "generatedAt", "minimumAppSchemaVersion", "countries", "corridors"],
   "properties": {
     "schemaVersion": { "const": 1 },
     "contentVersion": { "type": "string", "pattern": "^[0-9]{4}\\.[0-9]{2}\\.[0-9]{2}\\.[0-9]+$" },
@@ -24,6 +24,15 @@
         }
       }
     },
-    "corridorsVersion": { "type": "string" }
+    "corridors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "sha256", "path"],
+      "properties": {
+        "version": { "type": "string", "pattern": "^[0-9]{4}\\.[0-9]{2}\\.[0-9]{2}\\.[0-9]+$" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "path": { "const": "corridors.json" }
+      }
+    }
   }
 }
