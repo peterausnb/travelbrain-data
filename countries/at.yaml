@@ -6,17 +6,88 @@ country:
     de: Österreich
   euMember: true
   schengenMember: true
-  coverage: unavailable
+  coverage: partial
 content:
   locale: de-DE
   audience:
     residenceCountry: DE
     nationality: DE
-  editorialNote: Platzhalter. Fachinhalte und Quellen werden in einem eigenen Pull Request ergänzt.
-sources: []
+  summary:
+    de: Transitwissen für Fahrten aus Deutschland nach Italien über den Brenner.
+  entry:
+    documents:
+      de: Einreise mit Reisepass oder Personalausweis möglich; ein gültiges Reisedokument sollte auch für Kinder mitgeführt werden.
+      sourceRefs: [aa-oesterreich]
+  road:
+    toll:
+      de: Für Fahrzeuge bis einschließlich 3,5 Tonnen gilt auf fast allen Autobahnen und Schnellstraßen die Vignettenpflicht. Auf der A 13 Brenner wird zusätzlich beziehungsweise abschnittsbezogen eine Streckenmaut erhoben.
+      sourceRefs: [asfinag-toll-system, asfinag-brenner]
+    digitalPurchase:
+      de: Die digitale 1-Tages- und 10-Tages-Vignette kann sofort gültig sein. Beim Onlinekauf als Privatperson gelten 2-Monats- und Jahresvignetten grundsätzlich erst ab dem 18. Tag.
+      sourceRefs: [asfinag-toll-system]
+    corridorAdvisory:
+      de: Wegen des Neubaus der Luegbrücke gilt auf der A 13 grundsätzlich eine einspurige Verkehrsführung je Richtung; an ausgewählten Tagen wird temporär zweispurig geführt. Vor Abfahrt Fahrkalender und Verkehrslage prüfen.
+      sourceRefs: [asfinag-lueg]
+  money:
+    currencyCode: EUR
+    currencyName:
+      de: Euro
+    sourceRefs: [ecb-euro]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+      - service:
+          de: Polizei
+        number: "133"
+      - service:
+          de: Rettungsdienst
+        number: "144"
+      - service:
+          de: Feuerwehr
+        number: "122"
+    sourceRefs: [at-emergency]
+sources:
+  - id: aa-oesterreich
+    title: "Österreich: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/service/laender/oesterreich-node/oesterreichsicherheit-210962
+    accessedAt: "2026-07-16"
+  - id: asfinag-toll-system
+    title: More information about the Austrian toll system
+    publisher: ASFINAG
+    type: official_operator
+    url: https://shop.asfinag.at/en/products/toll-system/
+    accessedAt: "2026-07-16"
+  - id: asfinag-brenner
+    title: A 13 Brenner motorway
+    publisher: ASFINAG
+    type: official_operator
+    url: https://shop.asfinag.at/en/products/digital-section-toll/a-13-brenner-motorway/
+    accessedAt: "2026-07-16"
+  - id: asfinag-lueg
+    title: A 13 Brenner Autobahn - Neuerrichtung Luegbrücke
+    publisher: ASFINAG
+    type: official_operator
+    url: https://www.asfinag.at/bauen-erhalten/bauprojekte/a-13-brenner-autobahn-luegbruecke/
+    accessedAt: "2026-07-16"
+  - id: ecb-euro
+    title: Our money - members of the euro area
+    publisher: Europäische Zentralbank
+    type: official_eu
+    url: https://www.ecb.europa.eu/euro/intro/html/index.en.html
+    accessedAt: "2026-07-16"
+  - id: at-emergency
+    title: Notrufnummern
+    publisher: Republik Österreich
+    type: official_government
+    url: https://www.oesterreich.gv.at/de/themen/notfaelle_unfaelle_und_kriminalitaet/notrufnummern
+    accessedAt: "2026-07-16"
 review:
-  status: draft
+  status: approved
   reviewedAt: "2026-07-16"
-  nextReviewAt: "2026-08-16"
-  reviewer: pending
-  changeNote: Technischer Platzhalter ohne freigegebene Reiseinformationen
+  nextReviewAt: "2026-10-16"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erstes freigegebenes Transitpaket für den Brennerkorridor

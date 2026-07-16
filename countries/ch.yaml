@@ -6,17 +6,87 @@ country:
     de: Schweiz
   euMember: false
   schengenMember: true
-  coverage: unavailable
+  coverage: partial
 content:
   locale: de-DE
   audience:
     residenceCountry: DE
     nationality: DE
-  editorialNote: Platzhalter. Fachinhalte und Quellen werden in einem eigenen Pull Request ergänzt.
-sources: []
+  summary:
+    de: Transitwissen für Fahrten aus Deutschland nach Italien über den Gotthard.
+  entry:
+    documents:
+      de: Einreise mit gültigem Reisepass oder Personalausweis; auch Kinder benötigen ein eigenes gültiges Reisedokument.
+      sourceRefs: [aa-schweiz]
+    borderNote:
+      de: Vorübergehende Kontrollen und Wartezeiten an der deutsch-schweizerischen Grenze sind möglich.
+      sourceRefs: [aa-schweiz]
+  road:
+    toll:
+      de: Für Autos, Motorräder, Anhänger, Wohnwagen und Camper bis 3,5 Tonnen ist auf Autobahnen und Autostrassen eine Jahresvignette erforderlich. Sie ist als Klebe- oder E-Vignette erhältlich; Kurzzeitvignetten gibt es nicht.
+      sourceRefs: [ch-vignette]
+    vignettePrice:
+      amount: 40
+      currencyCode: CHF
+      note:
+        de: Preis der Vignette 2026; vor der Reise erneut prüfen.
+      sourceRefs: [ch-vignette]
+    drivingRules:
+      de: Ganzjährig mit Tagfahr- oder Abblendlicht fahren. Die allgemeine Alkoholgrenze beträgt 0,5 Promille, für Fahranfänger in den ersten drei Jahren 0,1 Promille.
+      sourceRefs: [aa-schweiz]
+    corridorAdvisory:
+      de: Sperrungen und starke Wartezeiten am Gotthard sind möglich. Vor Abfahrt die aktuelle Verkehrslage prüfen; TravelBrain ersetzt keine Navigation oder Live-Verkehrsauskunft.
+      sourceRefs: [aa-schweiz]
+  money:
+    currencyCode: CHF
+    currencyName:
+      de: Schweizer Franken
+    note:
+      de: Euro werden mancherorts akzeptiert, sind aber nicht die Landeswährung.
+    sourceRefs: [aa-schweiz, snb-cash]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+      - service:
+          de: Polizei
+        number: "117"
+      - service:
+          de: Feuerwehr
+        number: "118"
+      - service:
+          de: Sanität
+        number: "144"
+    sourceRefs: [ch-emergency]
+sources:
+  - id: aa-schweiz
+    title: "Schweiz: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/reiseundsicherheit/schweizsicherheit-206208
+    accessedAt: "2026-07-16"
+  - id: ch-vignette
+    title: Vignette Schweiz 2026
+    publisher: Schweizer Behördenportal ch.ch
+    type: official_government
+    url: https://www.ch.ch/de/fahrzeuge-und-verkehr/autos-und-andere-fahrzeuge/autobahnvignette/
+    accessedAt: "2026-07-16"
+  - id: snb-cash
+    title: Der Notenumlauf
+    publisher: Schweizerische Nationalbank
+    type: official_government
+    url: https://www.snb.ch/de/the-snb/mandates-goals/cash/circulation
+    accessedAt: "2026-07-16"
+  - id: ch-emergency
+    title: Weitere Nummern - kostenpflichtig oder gratis
+    publisher: Bundesamt für Kommunikation
+    type: official_government
+    url: https://www.bakom.admin.ch/de/weitere-nummern-kostenpflichtig-oder-gratis
+    accessedAt: "2026-07-16"
 review:
-  status: draft
+  status: approved
   reviewedAt: "2026-07-16"
-  nextReviewAt: "2026-08-16"
-  reviewer: pending
-  changeNote: Technischer Platzhalter ohne freigegebene Reiseinformationen
+  nextReviewAt: "2026-10-16"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erstes freigegebenes Transitpaket für den Gotthardkorridor

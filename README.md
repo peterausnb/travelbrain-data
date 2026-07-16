@@ -2,7 +2,7 @@
 
 Öffentliche, redaktionell gepflegte Länderinformationen für die Android-App **TravelBrain**.
 
-> **Projektstatus:** Aufbauphase. Alle vorhandenen Länderdateien sind Entwürfe und dürfen noch nicht als Reiseinformation verwendet werden.
+> **Projektstatus:** Aufbauphase. Italien sowie die Transitpakete Österreich und Schweiz sind erstmals freigegeben; weitere Länder folgen schrittweise.
 
 ## Grundsätze
 
@@ -35,7 +35,7 @@ python scripts/build.py
 python -m unittest discover -s tests
 ```
 
-Der Build erzeugt nur freigegebene Länder und Korridore. Da die ersten Beispieldateien Entwürfe sind, enthält `dist/manifest.json` zunächst keine produktiven Länder.
+Der Build erzeugt nur freigegebene Länder und Korridore. Entwürfe bleiben vollständig aus `dist/` ausgeschlossen.
 
 ## Veröffentlichungsweg
 
