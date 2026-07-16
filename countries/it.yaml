@@ -1,0 +1,22 @@
+schemaVersion: 1
+country:
+  iso2: IT
+  iso3: ITA
+  name:
+    de: Italien
+  euMember: true
+  schengenMember: true
+  coverage: unavailable
+content:
+  locale: de-DE
+  audience:
+    residenceCountry: DE
+    nationality: DE
+  editorialNote: Platzhalter. Fachinhalte und Quellen werden in einem eigenen Pull Request ergänzt.
+sources: []
+review:
+  status: draft
+  reviewedAt: "2026-07-16"
+  nextReviewAt: "2026-08-16"
+  reviewer: pending
+  changeNote: Technischer Platzhalter ohne freigegebene Reiseinformationen

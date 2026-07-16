@@ -1,0 +1,23 @@
+schemaVersion: 1
+id: de-north-italy
+status: draft
+originCountry: DE
+destination:
+  country: IT
+  regionTags: [north]
+travelModes: [car, motorcycle, motorhome]
+options:
+  - id: brenner
+    label:
+      de: Über Österreich und den Brenner
+    countries: [DE, AT, IT]
+    recommended: true
+    notes:
+      de: Typischer Korridor aus Süd- und Mitteldeutschland; keine Navigation.
+  - id: gotthard
+    label:
+      de: Über die Schweiz und den Gotthard
+    countries: [DE, CH, IT]
+    recommended: false
+    notes:
+      de: Alternative über die Schweiz; keine Navigation.

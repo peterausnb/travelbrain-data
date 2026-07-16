@@ -1,0 +1,7 @@
+schemaVersion: 1
+values:
+  - official_government
+  - official_eu
+  - official_operator
+  - standards_body
+  - editorial

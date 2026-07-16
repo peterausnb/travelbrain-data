@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://travelbrain-data.example/schemas/country.schema.json",
+  "title": "TravelBrain country source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "country", "content", "sources", "review"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "country": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["iso2", "iso3", "name", "coverage"],
+      "properties": {
+        "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "iso3": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "name": {
+          "type": "object",
+          "required": ["de"],
+          "additionalProperties": false,
+          "properties": { "de": { "type": "string", "minLength": 1 } }
+        },
+        "euMember": { "type": "boolean" },
+        "schengenMember": { "type": "boolean" },
+        "coverage": { "enum": ["complete", "partial", "unavailable"] }
+      }
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["locale", "audience"],
+      "properties": {
+        "locale": { "const": "de-DE" },
+        "audience": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["residenceCountry", "nationality"],
+          "properties": {
+            "residenceCountry": { "const": "DE" },
+            "nationality": { "const": "DE" }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "review": { "$ref": "#/$defs/review" }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "publisher", "type", "url", "accessedAt"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "type": { "enum": ["official_government", "official_eu", "official_operator", "standards_body", "editorial"] },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "accessedAt": { "type": "string", "format": "date" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewedAt", "nextReviewAt", "reviewer", "changeNote"],
+      "properties": {
+        "status": { "enum": ["draft", "in_review", "approved", "stale", "blocked"] },
+        "reviewedAt": { "type": "string", "format": "date" },
+        "nextReviewAt": { "type": "string", "format": "date" },
+        "reviewer": { "type": "string", "minLength": 1 },
+        "changeNote": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
