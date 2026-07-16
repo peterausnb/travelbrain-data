@@ -1,6 +1,6 @@
 schemaVersion: 1
 id: de-north-italy
-status: draft
+status: approved
 originCountry: DE
 destination:
   country: IT
@@ -13,11 +13,11 @@ options:
     countries: [DE, AT, IT]
     recommended: true
     notes:
-      de: Typischer Korridor aus Süd- und Mitteldeutschland; keine Navigation.
+      de: Typischer Korridor aus Süd- und Mitteldeutschland. Österreichische Vignette und Brenner-Streckenmaut prüfen; keine Navigation.
   - id: gotthard
     label:
       de: Über die Schweiz und den Gotthard
     countries: [DE, CH, IT]
     recommended: false
     notes:
-      de: Alternative über die Schweiz; keine Navigation.
+      de: Alternative insbesondere für Ziele westlich des Gardasees und in der Lombardei. Schweizer Jahresvignette prüfen; keine Navigation.
