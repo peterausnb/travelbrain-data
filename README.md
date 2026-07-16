@@ -46,7 +46,15 @@ Der Build erzeugt nur freigegebene Länder und Korridore. Entwürfe bleiben voll
 5. Fachlich prüfen und `review.status` erst dann auf `approved` setzen.
 6. Nach Merge wird ein neues statisches Paket gebaut.
 
-GitHub Pages wird erst aktiviert, nachdem Schema, Signierung und die ersten freigegebenen Länder gemeinsam geprüft wurden.
+Nach Aktivierung von GitHub Pages mit der Quelle **GitHub Actions** veröffentlicht jeder Merge nach `main` automatisch nach:
+
+- `https://peterausnb.github.io/travelbrain-data/manifest.json`
+- `https://peterausnb.github.io/travelbrain-data/countries/it.json`
+- `https://peterausnb.github.io/travelbrain-data/corridors.json`
+
+Version und Erstellungszeit werden aus dem auslösenden Commit abgeleitet. Ein erneut ausgeführter Build desselben Laufs erzeugt dadurch identische Dateien. Die App prüft vor der Übernahme die im Manifest hinterlegten SHA-256-Werte.
+
+Die geplante zusätzliche Ed25519-Signatur ist in [SIGNING.md](SIGNING.md) beschrieben. Bis zu ihrer Einführung gilt HTTPS plus SHA-256-Prüfung als MVP-Transportabsicherung.
 
 ## Lizenz
 
