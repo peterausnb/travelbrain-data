@@ -22,6 +22,7 @@ schemas/                   JSON Schemas
 shared/                    gemeinsame Codelisten
 scripts/                   Validierung und Build
 tests/                     Pipeline-Tests
+docs/                      dokumentierte Quellenentscheidungen
 dist/                      generierte App-Dateien, nicht manuell bearbeiten
 .github/workflows/         Pull-Request- und Veröffentlichungsprüfung
 ```

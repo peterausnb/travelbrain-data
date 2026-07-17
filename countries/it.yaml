@@ -55,7 +55,7 @@ content:
     plugTypes: [C, F, L]
     adapterHint:
       de: Deutsche Euro- und Schuko-Stecker passen häufig, aber nicht in jede italienische Typ-L-Steckdose. Bei Schutzkontaktsteckern kann ein Adapter nötig sein.
-    sourceRefs: [worldstandards-power]
+    sourceRefs: [cei-23-50-v4, iec-60038, worldstandards-power]
   emergency:
     numbers:
       - service:
@@ -147,10 +147,22 @@ sources:
     publisher: World Standards
     type: editorial
     url: https://www.worldstandards.eu/electricity/plug-voltage-by-country/italy/
-    accessedAt: "2026-07-16"
+    accessedAt: "2026-07-17"
+  - id: cei-23-50-v4
+    title: "CEI 23-50;V4 – Spine e prese per usi domestici e similari"
+    publisher: Comitato Elettrotecnico Italiano
+    type: standards_body
+    url: https://mycatalogo.ceinorme.it/cei/item/0010014287
+    accessedAt: "2026-07-17"
+  - id: iec-60038
+    title: "IEC 60038:2009+AMD1:2021 – IEC standard voltages"
+    publisher: International Electrotechnical Commission
+    type: standards_body
+    url: https://webstore.iec.ch/en/publication/72877
+    accessedAt: "2026-07-17"
 review:
   status: approved
   reviewedAt: "2026-07-16"
   nextReviewAt: "2026-10-16"
   reviewer: TravelBrain-Redaktion
-  changeNote: Erste fachlich geprüfte Fassung aus amtlichen und klar gekennzeichneten redaktionellen Quellen
+  changeNote: Steckdosenangaben zusätzlich mit CEI- und IEC-Normquellen hinterlegt
