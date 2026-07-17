@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://travelbrain.example/schemas/manifest-signature.schema.json",
+  "title": "TravelBrain manifest signature",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "algorithm", "keyId", "manifestSha256", "signature"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "algorithm": { "const": "ECDSA_P256_SHA256" },
+    "keyId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$"
+    },
+    "manifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 172,
+      "pattern": "^[A-Za-z0-9+/]+={0,2}$"
+    }
+  }
+}
