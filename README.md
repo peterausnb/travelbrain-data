@@ -54,7 +54,7 @@ Nach Aktivierung von GitHub Pages mit der Quelle **GitHub Actions** veröffentli
 
 Version und Erstellungszeit werden aus dem auslösenden Commit abgeleitet. Ein erneut ausgeführter Build desselben Laufs erzeugt dadurch identische Dateien. Die App prüft vor der Übernahme die im Manifest hinterlegten SHA-256-Werte.
 
-Die geplante zusätzliche Ed25519-Signatur ist in [SIGNING.md](SIGNING.md) beschrieben. Bis zu ihrer Einführung gilt HTTPS plus SHA-256-Prüfung als MVP-Transportabsicherung.
+Die vorbereitete zusätzliche ECDSA-P-256-Signatur ist in [SIGNING.md](SIGNING.md) beschrieben. Bis zur kontrollierten Aktivierung mit einem extern erzeugten Produktionsschlüssel gilt HTTPS plus SHA-256-Prüfung als MVP-Transportabsicherung.
 
 ## Lizenz
 
