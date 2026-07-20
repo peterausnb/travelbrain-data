@@ -41,7 +41,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         manifest = json.loads((ROOT / "dist/manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["contentVersion"], "2026.01.01.42")
-        self.assertEqual(set(manifest["countries"]), {"AT", "CH", "IT"})
+        self.assertEqual(set(manifest["countries"]), {"AT", "CH", "FR", "IT"})
         for country in manifest["countries"].values():
             self.assertIn(country["coverage"], {"complete", "partial"})
             self.assertRegex(country["sha256"], r"^[a-f0-9]{64}$")
