@@ -1,0 +1,168 @@
+schemaVersion: 1
+country:
+  iso2: ES
+  iso3: ESP
+  name:
+    de: Spanien
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience:
+    residenceCountry: DE
+    nationality: DE
+  summary:
+    de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise auf dem spanischen Festland.
+  entry:
+    documents:
+      de: Für deutsche Staatsangehörige ist die Einreise mit Reisepass oder Personalausweis möglich. Auch Kinder benötigen ein eigenes gültiges Reisedokument.
+      sourceRefs: [aa-spanien]
+    carryDocument:
+      de: Ein gültiges Reisedokument sollte während der Reise mitgeführt werden, da Kontrollen möglich sind.
+      sourceRefs: [aa-spanien]
+  road:
+    drivingLicence:
+      de: Der deutsche Führerschein wird anerkannt.
+      sourceRefs: [aa-spanien, dgt-tourists]
+    toll:
+      de: Der überwiegende Teil des spanischen Autobahn- und Schnellstraßennetzes ist mautfrei. Auf einzelnen noch privat betriebenen AP-Autobahnen und Sonderstrecken kann weiterhin Maut anfallen.
+      paymentMethods:
+        de: An verbleibenden Mautstationen sind je nach Betreiber unter anderem Barzahlung und Kreditkarte möglich. Die Hinweise an der jeweiligen Strecke beachten.
+      sourceRefs: [aa-spanien]
+    restrictedTrafficZones:
+      de: In vielen Städten gelten oder entstehen Zonas de Bajas Emisiones (ZBE) mit lokalen Zufahrtsbeschränkungen. Regeln, Ausnahmen und gegebenenfalls Registrierungsanforderungen unterscheiden sich je nach Kommune und sollten vor der Einfahrt geprüft werden.
+      sourceRefs: [dgt-zbe, miteco-zbe]
+    alcohol:
+      de: Allgemeine Alkoholgrenze 0,5 Promille; für Fahranfänger in den ersten zwei Jahren und Berufsfahrer gilt 0,3 Promille.
+      sourceRefs: [aa-spanien]
+    equipmentAndLights:
+      de: Für in Spanien zugelassene Fahrzeuge ist seit Januar 2026 die vernetzte V16-Warnleuchte vorgeschrieben. Mit ausländischer Zulassung können Reisende übergangsweise weiterhin die nach den Regeln ihres Zulassungsstaats vorgeschriebene Pannenkennzeichnung wie das Warndreieck verwenden.
+      sourceRefs: [aa-spanien, dgt-emergency]
+    winter:
+      de: Winterausrüstung ist strecken- und wetterabhängig. In Bergregionen und bei entsprechenden Verkehrszeichen können Winterreifen oder Schneeketten erforderlich sein.
+      sourceRefs: [dgt-tourists]
+  money:
+    currencyCode: EUR
+    currencyName:
+      de: Euro
+    note:
+      de: Spanien gehört zum Euroraum; ein Währungsumtausch aus Euro ist nicht erforderlich.
+    sourceRefs: [ecb-euro]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, F]
+    adapterHint:
+      de: Deutsche Euro- und Schuko-Stecker passen in der Regel ohne Adapter.
+    sourceRefs: [iec-60038, worldstandards-power-spain]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+    note:
+      de: Die 112 ist in der gesamten EU kostenlos erreichbar und verbindet mit den zuständigen Notfalldiensten.
+    sourceRefs: [eu-emergency]
+  pets:
+    scope:
+      de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.
+    requirements:
+      - de: Gültiger EU-Heimtierausweis
+      - de: Kennzeichnung durch Mikrochip oder zulässige ältere Tätowierung
+      - de: Gültige Tollwutimpfung
+    youngAnimals:
+      de: Für junge, noch nicht wirksam gegen Tollwut geimpfte Tiere gelten besondere Regeln; vor der Reise die aktuellen spanischen und EU-Vorgaben prüfen.
+    sourceRefs: [aa-spanien, eu-pets]
+  phrases:
+    - category: greeting
+      de: Guten Tag
+      local: Buenos días
+    - category: hotel
+      de: Ich habe eine Reservierung.
+      local: Tengo una reserva.
+    - category: restaurant
+      de: Die Rechnung, bitte.
+      local: La cuenta, por favor.
+    - category: shopping
+      de: Kann ich mit Karte bezahlen?
+      local: ¿Puedo pagar con tarjeta?
+    - category: transport
+      de: Wo ist die nächste Tankstelle?
+      local: ¿Dónde está la gasolinera más cercana?
+    - category: doctor
+      de: Ich brauche einen Arzt.
+      local: Necesito un médico.
+    - category: pharmacy
+      de: Wo ist eine Apotheke?
+      local: ¿Dónde hay una farmacia?
+    - category: emergency
+      de: Bitte rufen Sie den Notruf.
+      local: Llame a emergencias, por favor.
+sources:
+  - id: aa-spanien
+    title: "Spanien: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/service/laender/spanien-node/spaniensicherheit-210534
+    accessedAt: "2026-07-20"
+  - id: dgt-tourists
+    title: Información para turistas extranjeros
+    publisher: Dirección General de Tráfico
+    type: official_government
+    url: https://www.dgt.es/muevete-con-seguridad/viaja-seguro/consejos-extranjeros/informacion-para-turistas-extranjeros/index.html
+    accessedAt: "2026-07-20"
+  - id: dgt-zbe
+    title: Zonas de Bajas Emisiones (ZBE)
+    publisher: Dirección General de Tráfico
+    type: official_government
+    url: https://nap.dgt.es/es/dataset/zonas-de-bajas-emisiones
+    accessedAt: "2026-07-20"
+  - id: miteco-zbe
+    title: Las zonas de bajas emisiones en España
+    publisher: Ministerio para la Transición Ecológica y el Reto Demográfico
+    type: official_government
+    url: https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/movilidad/zonas_de_bajas_emisiones_en_espana.html
+    accessedAt: "2026-07-20"
+  - id: dgt-emergency
+    title: En caso de emergencia
+    publisher: Dirección General de Tráfico
+    type: official_government
+    url: https://www.dgt.es/muevete-con-seguridad/viaja-seguro/consejos-extranjeros/en-caso-de-emergencia/
+    accessedAt: "2026-07-20"
+  - id: ecb-euro
+    title: Our money - members of the euro area
+    publisher: Europäische Zentralbank
+    type: official_eu
+    url: https://www.ecb.europa.eu/euro/intro/html/index.en.html
+    accessedAt: "2026-07-20"
+  - id: eu-emergency
+    title: 112 - the EU's emergency phone number
+    publisher: Europäische Union
+    type: official_eu
+    url: https://digital-strategy.ec.europa.eu/en/policies/112
+    accessedAt: "2026-07-20"
+  - id: eu-pets
+    title: Travelling with a pet within the EU
+    publisher: Europäische Kommission
+    type: official_eu
+    url: https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en
+    accessedAt: "2026-07-20"
+  - id: worldstandards-power-spain
+    title: Power plug, socket and mains voltage in Spain
+    publisher: World Standards
+    type: editorial
+    url: https://www.worldstandards.eu/electricity/plug-voltage-by-country/spain/
+    accessedAt: "2026-07-20"
+  - id: iec-60038
+    title: "IEC 60038:2009+AMD1:2021 - IEC standard voltages"
+    publisher: International Electrotechnical Commission
+    type: standards_body
+    url: https://webstore.iec.ch/en/publication/72877
+    accessedAt: "2026-07-20"
+review:
+  status: approved
+  reviewedAt: "2026-07-20"
+  nextReviewAt: "2026-10-20"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Spanien-Fassung aus amtlichen, EU- und klar gekennzeichneten redaktionellen Quellen
