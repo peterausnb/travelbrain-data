@@ -1,6 +1,6 @@
 schemaVersion: 1
 country:
-  iso2: NO
+  iso2: "NO"
   iso3: NOR
   name: {de: Norwegen}
   euMember: false
