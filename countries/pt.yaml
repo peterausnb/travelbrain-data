@@ -1,0 +1,61 @@
+schemaVersion: 1
+country:
+  iso2: PT
+  iso3: PRT
+  name: {de: Portugal}
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience: {residenceCountry: DE, nationality: DE}
+  summary: {de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise nach Portugal.}
+  entry:
+    documents:
+      de: Deutsche Staatsangehörige können mit Reisepass oder Personalausweis einreisen. Auch Kinder benötigen ein eigenes gültiges Reisedokument.
+      sourceRefs: [aa-portugal]
+  road:
+    drivingLicence: {de: Der deutsche Führerschein wird anerkannt., sourceRefs: [aa-portugal]}
+    toll:
+      de: Auf zahlreichen Autobahnen fallen Mautgebühren an. Es gibt klassische Mautstrecken und elektronische Systeme; bei ausländischen Fahrzeugen vorab die passende Zahlungs- oder Registrierungslösung prüfen.
+      sourceRefs: [aa-portugal]
+    equipmentAndLights:
+      de: Lokale Verkehrs- und Sicherheitsvorschriften sowie die aktuelle Waldbrand- und Wetterlage beachten.
+      sourceRefs: [aa-portugal]
+  money:
+    currencyCode: EUR
+    currencyName: {de: Euro}
+    note: {de: Portugal gehört zum Euroraum.}
+    sourceRefs: [aa-portugal]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, F]
+    adapterHint: {de: Deutsche Stecker passen in der Regel ohne Adapter.}
+    sourceRefs: [power-portugal]
+  emergency:
+    numbers:
+      - service: {de: Einheitlicher Notruf}
+        number: "112"
+    sourceRefs: [aa-portugal]
+  pets:
+    scope: {de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.}
+    requirements: [{de: Gültiger EU-Heimtierausweis}, {de: Mikrochip oder zulässige ältere Tätowierung}, {de: Gültige Tollwutimpfung}]
+    sourceRefs: [eu-pets]
+  phrases:
+    - {category: greeting, de: Guten Tag, local: Bom dia}
+    - {category: hotel, de: Ich habe eine Reservierung., local: Tenho uma reserva.}
+    - {category: restaurant, de: Die Rechnung, bitte., local: A conta, por favor.}
+    - {category: shopping, de: Kann ich mit Karte bezahlen?, local: Posso pagar com cartão?}
+    - {category: doctor, de: Ich brauche einen Arzt., local: Preciso de um médico.}
+    - {category: emergency, de: Bitte rufen Sie den Notruf., local: Por favor, ligue para o 112.}
+sources:
+  - {id: aa-portugal, title: "Portugal: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/service/laender/portugal-node/portugalsicherheit-210900", accessedAt: "2026-07-21"}
+  - {id: eu-pets, title: Travelling with a pet within the EU, publisher: Europäische Kommission, type: official_eu, url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en", accessedAt: "2026-07-21"}
+  - {id: power-portugal, title: Power plug socket and mains voltage in Portugal, publisher: World Standards, type: editorial, url: "https://www.worldstandards.eu/electricity/plug-voltage-by-country/portugal/", accessedAt: "2026-07-21"}
+review:
+  status: approved
+  reviewedAt: "2026-07-21"
+  nextReviewAt: "2026-10-21"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Portugal-Fassung
