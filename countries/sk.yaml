@@ -43,12 +43,12 @@ content:
     requirements: [{de: Gültiger EU-Heimtierausweis}, {de: Mikrochip oder zulässige ältere Tätowierung}, {de: Gültige Tollwutimpfung}]
     sourceRefs: [eu-pets]
   phrases:
-    - {category: greeting, de: Guten Tag, local: Dobrý deň}
-    - {category: hotel, de: Ich habe eine Reservierung., local: Mám rezerváciu.}
-    - {category: restaurant, de: Die Rechnung, bitte., local: Účet, prosím.}
-    - {category: shopping, de: Kann ich mit Karte bezahlen?, local: Môžem platiť kartou?}
-    - {category: doctor, de: Ich brauche einen Arzt., local: Potrebujem lekára.}
-    - {category: emergency, de: Bitte rufen Sie den Notruf., local: Prosím, zavolajte 112.}
+    - {category: greeting, de: "Guten Tag", local: "Dobrý deň"}
+    - {category: hotel, de: "Ich habe eine Reservierung.", local: "Mám rezerváciu."}
+    - {category: restaurant, de: "Die Rechnung, bitte.", local: "Účet, prosím."}
+    - {category: shopping, de: "Kann ich mit Karte bezahlen?", local: "Môžem platiť kartou?"}
+    - {category: doctor, de: "Ich brauche einen Arzt.", local: "Potrebujem lekára."}
+    - {category: emergency, de: "Bitte rufen Sie den Notruf.", local: "Prosím, zavolajte 112."}
 sources:
   - {id: aa-slowakei, title: "Slowakei: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/service/laender/slowakei-node/slowakeisicherheit/206360", accessedAt: "2026-07-21"}
   - {id: eu-pets, title: Travelling with a pet within the EU, publisher: Europäische Kommission, type: official_eu, url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en", accessedAt: "2026-07-21"}
