@@ -1,0 +1,168 @@
+schemaVersion: 1
+country:
+  iso2: BE
+  iso3: BEL
+  name:
+    de: Belgien
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience:
+    residenceCountry: DE
+    nationality: DE
+  summary:
+    de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise.
+  entry:
+    documents:
+      de: Für deutsche Staatsangehörige ist die Einreise mit Reisepass oder Personalausweis möglich. Auch Kinder benötigen ein eigenes Reisedokument.
+      sourceRefs: [aa-belgien]
+    carryDocument:
+      de: Ein gültiges Reisedokument sollte während der Reise mitgeführt werden, da Kontrollen möglich sind.
+      sourceRefs: [aa-belgien]
+  road:
+    drivingLicence:
+      de: Der deutsche Führerschein wird anerkannt.
+      sourceRefs: [aa-belgien]
+    toll:
+      de: Für Pkw gibt es keine allgemeine Autobahnmaut. Eine wichtige Ausnahme ist der mautpflichtige Liefkenshoektunnel bei Antwerpen.
+      paymentMethods:
+        de: Am Liefkenshoektunnel kann je nach Spur unter anderem mit Karte, Bargeld oder elektronischem Teletol-System bezahlt werden.
+      sourceRefs: [liefkenshoek-rates]
+    restrictedTrafficZones:
+      de: In Brüssel, Antwerpen und Gent gelten Umweltzonen mit fahrzeugabhängigen Zufahrtsregeln. Für ausländisch zugelassene Fahrzeuge kann eine vorherige Registrierung erforderlich sein; vor der Einfahrt die jeweilige Stadtregel prüfen.
+      sourceRefs: [brussels-lez, ghent-lez]
+    alcohol:
+      de: Für Fahrer allgemein gilt eine Alkoholgrenze von 0,5 Promille; für Berufskraftfahrer gilt 0,2 Promille.
+      sourceRefs: [eu-road-rules-belgium]
+    equipmentAndLights:
+      de: Sicherheitsgurte sind vorgeschrieben. Die jeweils gültigen belgischen Verkehrs- und Ausrüstungsvorschriften sollten vor der Fahrt geprüft werden.
+      sourceRefs: [eu-road-rules-belgium]
+    winter:
+      de: Es gibt keine landesweit generelle Winterreifenpflicht für Pkw. Bei winterlichen Bedingungen sind geeignete Reifen dennoch sinnvoll; lokale Beschilderung beachten.
+      sourceRefs: [aa-belgien]
+  money:
+    currencyCode: EUR
+    currencyName:
+      de: Euro
+    note:
+      de: Belgien gehört zum Euroraum; ein Währungsumtausch aus Euro ist nicht erforderlich.
+    sourceRefs: [ecb-euro]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, E]
+    adapterHint:
+      de: Eurostecker passen. Moderne deutsche Schutzkontaktstecker mit E/F-Kompatibilität passen in der Regel ebenfalls; bei älteren Sondersteckern kann ein Adapter nötig sein.
+    sourceRefs: [iec-60038, worldstandards-power-belgium]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+    note:
+      de: Die 112 ist in der gesamten EU kostenlos erreichbar und verbindet mit den zuständigen Notfalldiensten.
+    sourceRefs: [eu-emergency]
+  pets:
+    scope:
+      de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.
+    requirements:
+      - de: Gültiger EU-Heimtierausweis
+      - de: Kennzeichnung durch Mikrochip oder zulässige ältere Tätowierung
+      - de: Gültige Tollwutimpfung
+    youngAnimals:
+      de: Für junge, noch nicht wirksam gegen Tollwut geschützte Tiere gelten besondere EU- und nationale Regeln; vor der Reise die aktuelle belgische Regelung prüfen.
+    sourceRefs: [eu-pets]
+  phrases:
+    - category: greeting
+      de: Guten Tag
+      local: Bonjour / Goedendag
+    - category: hotel
+      de: Ich habe eine Reservierung.
+      local: J'ai une réservation. / Ik heb een reservatie.
+    - category: restaurant
+      de: Die Rechnung, bitte.
+      local: L'addition, s'il vous plaît. / De rekening, alstublieft.
+    - category: shopping
+      de: Kann ich mit Karte bezahlen?
+      local: Puis-je payer par carte ? / Kan ik met kaart betalen?
+    - category: transport
+      de: Wo ist die nächste Tankstelle?
+      local: Où est la station-service la plus proche ? / Waar is het dichtstbijzijnde tankstation?
+    - category: doctor
+      de: Ich brauche einen Arzt.
+      local: J'ai besoin d'un médecin. / Ik heb een dokter nodig.
+    - category: pharmacy
+      de: Wo ist eine Apotheke?
+      local: Où est une pharmacie ? / Waar is een apotheek?
+    - category: emergency
+      de: Bitte rufen Sie den Notruf.
+      local: Appelez les secours, s'il vous plaît. / Bel de hulpdiensten, alstublieft.
+sources:
+  - id: aa-belgien
+    title: "Belgien: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/reiseundsicherheit/belgiensicherheit-200382
+    accessedAt: "2026-07-22"
+  - id: eu-road-rules-belgium
+    title: Straßenverkehr – Vorschriften und Sicherheit - Belgien
+    publisher: Europäische Union
+    type: official_eu
+    url: https://europa.eu/youreurope/citizens/travel/driving-abroad/road-rules-and-safety/belgium/index_de.htm
+    accessedAt: "2026-07-22"
+  - id: liefkenshoek-rates
+    title: Rates & subscription
+    publisher: NV Tunnel Liefkenshoek
+    type: official_operator
+    url: https://www.liefkenshoektunnel.be/en/rates-subscription
+    accessedAt: "2026-07-22"
+  - id: brussels-lez
+    title: Low Emission Zone Brussels
+    publisher: Brussels-Capital Region
+    type: official_government
+    url: https://lez.brussels/mytax/en
+    accessedAt: "2026-07-22"
+  - id: ghent-lez
+    title: Low-emission zone in Ghent
+    publisher: Stad Gent
+    type: official_government
+    url: https://stad.gent/en/mobility-ghent/low-emission-zone-ghent
+    accessedAt: "2026-07-22"
+  - id: ecb-euro
+    title: Our money - members of the euro area
+    publisher: Europäische Zentralbank
+    type: official_eu
+    url: https://www.ecb.europa.eu/euro/intro/html/index.en.html
+    accessedAt: "2026-07-22"
+  - id: eu-emergency
+    title: 112 - the EU's emergency phone number
+    publisher: Europäische Union
+    type: official_eu
+    url: https://digital-strategy.ec.europa.eu/en/policies/112
+    accessedAt: "2026-07-22"
+  - id: eu-pets
+    title: Travelling with a pet within the EU
+    publisher: Europäische Kommission
+    type: official_eu
+    url: https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en
+    accessedAt: "2026-07-22"
+  - id: worldstandards-power-belgium
+    title: Power plug, socket and mains voltage in Belgium
+    publisher: World Standards
+    type: editorial
+    url: https://www.worldstandards.eu/electricity/plug-voltage-by-country/belgium/
+    accessedAt: "2026-07-22"
+  - id: iec-60038
+    title: "IEC 60038:2009+AMD1:2021 - IEC standard voltages"
+    publisher: International Electrotechnical Commission
+    type: standards_body
+    url: https://webstore.iec.ch/en/publication/72877
+    accessedAt: "2026-07-22"
+review:
+  status: approved
+  reviewedAt: "2026-07-22"
+  nextReviewAt: "2026-10-22"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Belgien-Fassung aus amtlichen, EU-, Betreiber- und klar gekennzeichneten redaktionellen Quellen
