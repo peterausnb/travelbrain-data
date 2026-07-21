@@ -1,0 +1,168 @@
+schemaVersion: 1
+country:
+  iso2: NL
+  iso3: NLD
+  name:
+    de: Niederlande
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience:
+    residenceCountry: DE
+    nationality: DE
+  summary:
+    de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise in den europäischen Niederlanden.
+  entry:
+    documents:
+      de: Für deutsche Staatsangehörige ist die Einreise mit Reisepass oder Personalausweis möglich. Auch Kinder benötigen ein eigenes gültiges Reisedokument.
+      sourceRefs: [aa-niederlande]
+    carryDocument:
+      de: Wegen möglicher Grenz- und Personenkontrollen sollten gültige Reisedokumente während der Reise mitgeführt werden.
+      sourceRefs: [aa-niederlande]
+  road:
+    drivingLicence:
+      de: Der deutsche Führerschein wird anerkannt.
+      sourceRefs: [aa-niederlande]
+    toll:
+      de: Es gibt kein flächendeckendes Pkw-Mautsystem. Auf einzelnen Sonderstrecken fällt jedoch Maut an, insbesondere auf der A24/Blankenburgverbindung bei Rotterdam.
+      paymentMethods:
+        de: Auf der A24 wird die Maut elektronisch über das Kennzeichen erfasst. Sie kann automatisch oder innerhalb der vorgegebenen Frist online bezahlt werden; dies gilt auch für ausländische Kennzeichen.
+      sourceRefs: [rijksoverheid-a24]
+    restrictedTrafficZones:
+      de: Mehrere Städte haben Umweltzonen. Für Diesel-Pkw gelten aktuell insbesondere in Amsterdam, Arnhem, Den Haag und Utrecht Zufahrtsbeschränkungen nach Emissionsklasse; die Regeln gelten auch für ausländische Fahrzeuge.
+      sourceRefs: [milieuzones-locations, milieuzones-english]
+    alcohol:
+      de: Allgemeine Alkoholgrenze 0,5 Promille; für Fahranfänger mit weniger als fünf Jahren Fahrerfahrung gilt 0,2 Promille.
+      sourceRefs: [aa-niederlande, eu-road-rules-netherlands]
+    equipmentAndLights:
+      de: Besondere Aufmerksamkeit gilt Radfahrern und markierten Radwegen. Durchgezogene Radfahrstreifen dürfen von Kraftfahrzeugen nicht befahren werden.
+      sourceRefs: [eu-road-rules-netherlands]
+    winter:
+      de: Es besteht keine allgemeine saisonale Winterreifenpflicht. Bei winterlichen Straßenverhältnissen sollte die Ausrüstung dennoch an Wetter und Strecke angepasst werden.
+      sourceRefs: [eu-road-rules-netherlands]
+  money:
+    currencyCode: EUR
+    currencyName:
+      de: Euro
+    note:
+      de: In den europäischen Niederlanden ist der Euro das gesetzliche Zahlungsmittel. Kartenzahlung ist weit verbreitet und wird vielerorts bevorzugt.
+    sourceRefs: [aa-niederlande, ecb-euro]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, F]
+    adapterHint:
+      de: Deutsche Euro- und Schuko-Stecker passen in der Regel ohne Adapter.
+    sourceRefs: [iec-60038, worldstandards-power-netherlands]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+    note:
+      de: Die 112 ist in der gesamten EU kostenlos erreichbar und verbindet mit den zuständigen Notfalldiensten.
+    sourceRefs: [eu-emergency]
+  pets:
+    scope:
+      de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.
+    requirements:
+      - de: Gültiger EU-Heimtierausweis
+      - de: Kennzeichnung durch Mikrochip oder zulässige ältere Tätowierung
+      - de: Gültige Tollwutimpfung
+    youngAnimals:
+      de: Für junge Tiere ohne wirksamen Tollwutschutz gelten besondere EU-Regeln; vor der Reise die aktuellen Voraussetzungen prüfen.
+    sourceRefs: [aa-niederlande, eu-pets]
+  phrases:
+    - category: greeting
+      de: Guten Tag
+      local: Goedendag
+    - category: hotel
+      de: Ich habe eine Reservierung.
+      local: Ik heb een reservering.
+    - category: restaurant
+      de: Die Rechnung, bitte.
+      local: De rekening, alstublieft.
+    - category: shopping
+      de: Kann ich mit Karte bezahlen?
+      local: Kan ik met pin betalen?
+    - category: transport
+      de: Wo ist die nächste Tankstelle?
+      local: Waar is het dichtstbijzijnde tankstation?
+    - category: doctor
+      de: Ich brauche einen Arzt.
+      local: Ik heb een dokter nodig.
+    - category: pharmacy
+      de: Wo ist eine Apotheke?
+      local: Waar is een apotheek?
+    - category: emergency
+      de: Bitte rufen Sie den Notruf.
+      local: Bel alstublieft de hulpdiensten.
+sources:
+  - id: aa-niederlande
+    title: "Königreich der Niederlande: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/service/laender/niederlande-node/niederlandesicherheit/211084
+    accessedAt: "2026-07-21"
+  - id: eu-road-rules-netherlands
+    title: Road rules and safety - Netherlands
+    publisher: Europäische Union
+    type: official_eu
+    url: https://europa.eu/youreurope/citizens/travel/driving-abroad/road-rules-and-safety/netherlands/index_en.htm
+    accessedAt: "2026-07-21"
+  - id: rijksoverheid-a24
+    title: Tijdelijke tolheffing op de Blankenburgverbinding en de ViA15
+    publisher: Rijksoverheid
+    type: official_government
+    url: https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/wegen/tijdelijke-tolheffing-blankenburgverbinding-en-via15
+    accessedAt: "2026-07-21"
+  - id: milieuzones-locations
+    title: Locaties milieuzones
+    publisher: Milieuzones in Nederland
+    type: official_government
+    url: https://www.milieuzones.nl/en/node/400459
+    accessedAt: "2026-07-21"
+  - id: milieuzones-english
+    title: English - Milieuzones in Nederland
+    publisher: Milieuzones in Nederland
+    type: official_government
+    url: https://www.milieuzones.nl/en/english
+    accessedAt: "2026-07-21"
+  - id: ecb-euro
+    title: Our money - members of the euro area
+    publisher: Europäische Zentralbank
+    type: official_eu
+    url: https://www.ecb.europa.eu/euro/intro/html/index.en.html
+    accessedAt: "2026-07-21"
+  - id: eu-emergency
+    title: 112 - the EU's emergency phone number
+    publisher: Europäische Union
+    type: official_eu
+    url: https://digital-strategy.ec.europa.eu/en/policies/112
+    accessedAt: "2026-07-21"
+  - id: eu-pets
+    title: Travelling with a pet within the EU
+    publisher: Europäische Kommission
+    type: official_eu
+    url: https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en
+    accessedAt: "2026-07-21"
+  - id: worldstandards-power-netherlands
+    title: Power plug, socket and mains voltage in the Netherlands
+    publisher: World Standards
+    type: editorial
+    url: https://www.worldstandards.eu/electricity/plug-voltage-by-country/netherlands/
+    accessedAt: "2026-07-21"
+  - id: iec-60038
+    title: "IEC 60038:2009+AMD1:2021 - IEC standard voltages"
+    publisher: International Electrotechnical Commission
+    type: standards_body
+    url: https://webstore.iec.ch/en/publication/72877
+    accessedAt: "2026-07-21"
+review:
+  status: approved
+  reviewedAt: "2026-07-21"
+  nextReviewAt: "2026-10-21"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Niederlande-Fassung aus amtlichen, EU- und klar gekennzeichneten redaktionellen Quellen
