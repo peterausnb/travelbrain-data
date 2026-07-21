@@ -1,0 +1,112 @@
+schemaVersion: 1
+country:
+  iso2: PL
+  iso3: POL
+  name:
+    de: Polen
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience:
+    residenceCountry: DE
+    nationality: DE
+  summary:
+    de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise nach Polen.
+  entry:
+    documents:
+      de: Deutsche Staatsangehörige können mit Reisepass oder Personalausweis einreisen. Auch Kinder benötigen ein eigenes gültiges Reisedokument.
+      sourceRefs: [aa-polen]
+    carryDocument:
+      de: Ein gültiges Reisedokument sollte während der Reise mitgeführt werden, da Kontrollen möglich sind.
+      sourceRefs: [aa-polen]
+  road:
+    drivingLicence:
+      de: Der deutsche Führerschein wird anerkannt.
+      sourceRefs: [aa-polen]
+    toll:
+      de: Für Pkw sind weiterhin einzelne Autobahnabschnitte mautpflichtig, darunter die A2 Konin–Świecko und die A4 Kraków–Katowice. Die Zahlungsweise hängt vom Betreiber und Streckenabschnitt ab.
+      sourceRefs: [aa-polen]
+    alcohol:
+      de: Es gilt eine 0,2-Promille-Grenze; für Fahranfänger in der Probezeit gilt absolutes Alkoholverbot.
+      sourceRefs: [aa-polen]
+    equipmentAndLights:
+      de: Ganzjährig muss auch tagsüber mit Abblendlicht gefahren werden. Neben einem Warndreieck sollte ein Feuerlöscher mitgeführt werden.
+      sourceRefs: [aa-polen]
+  money:
+    currencyCode: PLN
+    currencyName:
+      de: Polnischer Złoty
+    note:
+      de: Polen gehört nicht zum Euroraum. Kartenzahlung ist weit verbreitet; dennoch kann eine kleine Bargeldreserve sinnvoll sein.
+    sourceRefs: [aa-polen]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, E]
+    adapterHint:
+      de: Übliche deutsche Eurostecker passen. Moderne kombinierte E/F-Schutzkontaktstecker funktionieren in der Regel ebenfalls.
+    sourceRefs: [power-polen]
+  emergency:
+    numbers:
+      - service:
+          de: Einheitlicher Notruf
+        number: "112"
+    note:
+      de: Die 112 ist in Polen kostenlos erreichbar.
+    sourceRefs: [aa-polen]
+  pets:
+    scope:
+      de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.
+    requirements:
+      - de: Gültiger EU-Heimtierausweis
+      - de: Kennzeichnung durch Mikrochip oder zulässige ältere Tätowierung
+      - de: Gültige Tollwutimpfung
+    youngAnimals:
+      de: Für junge Tiere gelten besondere Voraussetzungen; aktuelle EU- und polnische Vorgaben vor der Reise prüfen.
+    sourceRefs: [eu-pets]
+  phrases:
+    - category: greeting
+      de: Guten Tag
+      local: Dzień dobry
+    - category: hotel
+      de: Ich habe eine Reservierung.
+      local: Mam rezerwację.
+    - category: restaurant
+      de: Die Rechnung, bitte.
+      local: Poproszę rachunek.
+    - category: shopping
+      de: Kann ich mit Karte bezahlen?
+      local: Czy mogę zapłacić kartą?
+    - category: doctor
+      de: Ich brauche einen Arzt.
+      local: Potrzebuję lekarza.
+    - category: emergency
+      de: Bitte rufen Sie den Notruf.
+      local: Proszę zadzwonić pod numer 112.
+sources:
+  - id: aa-polen
+    title: "Polen: Reise- und Sicherheitshinweise"
+    publisher: Auswärtiges Amt
+    type: official_government
+    url: https://www.auswaertiges-amt.de/de/service/laender/polen-node/polensicherheit-199124
+    accessedAt: "2026-07-21"
+  - id: eu-pets
+    title: Travelling with a pet within the EU
+    publisher: Europäische Kommission
+    type: official_eu
+    url: https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en
+    accessedAt: "2026-07-21"
+  - id: power-polen
+    title: Power plug, socket and mains voltage in Poland
+    publisher: World Standards
+    type: editorial
+    url: https://www.worldstandards.eu/electricity/plug-voltage-by-country/poland/
+    accessedAt: "2026-07-21"
+review:
+  status: approved
+  reviewedAt: "2026-07-21"
+  nextReviewAt: "2026-10-21"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Polen-Fassung aus amtlichen, EU- und ergänzenden Quellen
