@@ -50,12 +50,12 @@ content:
       - {de: Gültige Tollwutimpfung}
     sourceRefs: [eu-pets]
   phrases:
-    - {category: greeting, de: Guten Tag, local: Dober dan}
-    - {category: hotel, de: Ich habe eine Reservierung., local: Imam rezervacijo.}
-    - {category: restaurant, de: Die Rechnung, bitte., local: Račun, prosim.}
-    - {category: shopping, de: Kann ich mit Karte bezahlen?, local: Ali lahko plačam s kartico?}
-    - {category: doctor, de: Ich brauche einen Arzt., local: Potrebujem zdravnika.}
-    - {category: emergency, de: Bitte rufen Sie den Notruf., local: Prosim, pokličite 112.}
+    - {category: greeting, de: "Guten Tag", local: "Dober dan"}
+    - {category: hotel, de: "Ich habe eine Reservierung.", local: "Imam rezervacijo."}
+    - {category: restaurant, de: "Die Rechnung, bitte.", local: "Račun, prosim."}
+    - {category: shopping, de: "Kann ich mit Karte bezahlen?", local: "Ali lahko plačam s kartico?"}
+    - {category: doctor, de: "Ich brauche einen Arzt.", local: "Potrebujem zdravnika."}
+    - {category: emergency, de: "Bitte rufen Sie den Notruf.", local: "Prosim, pokličite 112."}
 sources:
   - {id: aa-slowenien, title: "Slowenien: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/service/laender/slowenien-node/sloweniensicherheit-210644", accessedAt: "2026-07-21"}
   - {id: eu-pets, title: Travelling with a pet within the EU, publisher: Europäische Kommission, type: official_eu, url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en", accessedAt: "2026-07-21"}
