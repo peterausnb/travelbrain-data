@@ -1,0 +1,68 @@
+schemaVersion: 1
+country:
+  iso2: SI
+  iso3: SVN
+  name:
+    de: Slowenien
+  euMember: true
+  schengenMember: true
+  coverage: complete
+content:
+  locale: de-DE
+  audience: {residenceCountry: DE, nationality: DE}
+  summary:
+    de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Straßenreise nach Slowenien.
+  entry:
+    documents:
+      de: Reisepass oder Personalausweis sind für deutsche Staatsangehörige ausreichend; auch Kinder benötigen ein eigenes Reisedokument.
+      sourceRefs: [aa-slowenien]
+  road:
+    drivingLicence:
+      de: Der deutsche Führerschein wird anerkannt.
+      sourceRefs: [aa-slowenien]
+    toll:
+      de: Auf Autobahnen und bestimmten Fernstraßen gilt für Pkw eine elektronische Vignettenpflicht. Offizielle Informationen und Verkauf bietet DARS.
+      sourceRefs: [aa-slowenien]
+    equipmentAndLights:
+      de: Ganztägig muss mit Abblendlicht gefahren werden. Vom 15. November bis 15. März gelten Winterausrüstungsvorgaben.
+      sourceRefs: [aa-slowenien]
+  money:
+    currencyCode: EUR
+    currencyName: {de: Euro}
+    note: {de: Slowenien gehört zum Euroraum.}
+    sourceRefs: [aa-slowenien]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [C, F]
+    adapterHint: {de: Deutsche Stecker passen in der Regel ohne Adapter.}
+    sourceRefs: [power-slowenien]
+  emergency:
+    numbers:
+      - service: {de: Einheitlicher Notruf}
+        number: "112"
+    sourceRefs: [aa-slowenien]
+  pets:
+    scope: {de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland.}
+    requirements:
+      - {de: Gültiger EU-Heimtierausweis}
+      - {de: Mikrochip oder zulässige ältere Tätowierung}
+      - {de: Gültige Tollwutimpfung}
+    sourceRefs: [eu-pets]
+  phrases:
+    - {category: greeting, de: Guten Tag, local: Dober dan}
+    - {category: hotel, de: Ich habe eine Reservierung., local: Imam rezervacijo.}
+    - {category: restaurant, de: Die Rechnung, bitte., local: Račun, prosim.}
+    - {category: shopping, de: Kann ich mit Karte bezahlen?, local: Ali lahko plačam s kartico?}
+    - {category: doctor, de: Ich brauche einen Arzt., local: Potrebujem zdravnika.}
+    - {category: emergency, de: Bitte rufen Sie den Notruf., local: Prosim, pokličite 112.}
+sources:
+  - {id: aa-slowenien, title: "Slowenien: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/service/laender/slowenien-node/sloweniensicherheit-210644", accessedAt: "2026-07-21"}
+  - {id: eu-pets, title: Travelling with a pet within the EU, publisher: Europäische Kommission, type: official_eu, url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/travelling-pet-within-eu_en", accessedAt: "2026-07-21"}
+  - {id: power-slowenien, title: Power plug socket and mains voltage in Slovenia, publisher: World Standards, type: editorial, url: "https://www.worldstandards.eu/electricity/plug-voltage-by-country/slovenia/", accessedAt: "2026-07-21"}
+review:
+  status: approved
+  reviewedAt: "2026-07-21"
+  nextReviewAt: "2026-10-21"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte Slowenien-Fassung
