@@ -1,0 +1,70 @@
+schemaVersion: 1
+country:
+  iso2: GB
+  iso3: GBR
+  name: {de: Vereinigtes Königreich}
+  euMember: false
+  schengenMember: false
+  coverage: complete
+content:
+  locale: de-DE
+  audience: {residenceCountry: DE, nationality: DE}
+  summary: {de: Reisebasiswissen für deutsche Staatsangehörige mit Schwerpunkt Reise nach Großbritannien.}
+  entry:
+    documents:
+      de: Für die Einreise ist grundsätzlich ein Reisepass erforderlich. Der Personalausweis reicht für normale Besucher nicht aus.
+      sourceRefs: [aa-gb]
+    authorization:
+      de: Deutsche Staatsangehörige benötigen grundsätzlich eine Electronic Travel Authorisation (ETA), sofern keine Ausnahme oder ein anderer Aufenthaltstitel greift.
+      sourceRefs: [aa-gb]
+  road:
+    drivingLicence: {de: Der deutsche Führerschein ist gültig; für normale Besucher ist kein internationaler Führerschein erforderlich., sourceRefs: [aa-gb]}
+    toll:
+      de: Es gibt keine allgemeine Autobahnvignette. Einzelne Brücken, Tunnel, Straßenabschnitte und städtische Zonen können gebührenpflichtig sein; in London gelten zusätzliche City- und Emissionsregelungen.
+      sourceRefs: [aa-gb]
+    equipmentAndLights:
+      de: Es gilt Linksverkehr. Besondere Aufmerksamkeit gilt Kreisverkehren, Kreuzungen und beim Abbiegen.
+      sourceRefs: [aa-gb]
+  money:
+    currencyCode: GBP
+    currencyName: {de: Pfund Sterling}
+    note: {de: Das Vereinigte Königreich gehört nicht zum Euroraum. Kartenzahlung ist weit verbreitet.}
+    sourceRefs: [aa-gb]
+  power:
+    voltage: 230
+    frequencyHz: 50
+    plugTypes: [G]
+    adapterHint: {de: Für deutsche Stecker wird in der Regel ein Reiseadapter auf Typ G benötigt.}
+    sourceRefs: [power-gb]
+  emergency:
+    numbers:
+      - service: {de: Polizei Feuerwehr Rettungsdienst}
+        number: "999"
+      - service: {de: Europäischer Notruf}
+        number: "112"
+    sourceRefs: [aa-gb]
+  pets:
+    scope: {de: Private Reise mit Hund, Katze oder Frettchen aus Deutschland nach Großbritannien.}
+    requirements:
+      - {de: Mikrochip}
+      - {de: Gültige Tollwutimpfung}
+      - {de: Gültiger EU-Heimtierausweis oder anderes anerkanntes Reisedokument}
+      - {de: Hunde benötigen vor der Einreise grundsätzlich eine dokumentierte Bandwurmbehandlung innerhalb des vorgeschriebenen Zeitfensters}
+    sourceRefs: [govuk-pets]
+  phrases:
+    - {category: greeting, de: "Guten Tag", local: "Hello"}
+    - {category: hotel, de: "Ich habe eine Reservierung.", local: "I have a reservation."}
+    - {category: restaurant, de: "Die Rechnung, bitte.", local: "The bill, please."}
+    - {category: shopping, de: "Kann ich mit Karte bezahlen?", local: "Can I pay by card?"}
+    - {category: doctor, de: "Ich brauche einen Arzt.", local: "I need a doctor."}
+    - {category: emergency, de: "Bitte rufen Sie den Notruf.", local: "Please call 999 or 112."}
+sources:
+  - {id: aa-gb, title: "Vereinigtes Königreich: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/reiseundsicherheit/grossbritanniensicherheit-206408", accessedAt: "2026-07-21"}
+  - {id: govuk-pets, title: Bring your pet to Great Britain step by step, publisher: GOV.UK, type: official_government, url: "https://www.gov.uk/bring-your-pet-to-great-britain", accessedAt: "2026-07-21"}
+  - {id: power-gb, title: Power plug socket and mains voltage in United Kingdom, publisher: World Standards, type: editorial, url: "https://www.worldstandards.eu/electricity/plug-voltage-by-country/england/", accessedAt: "2026-07-21"}
+review:
+  status: approved
+  reviewedAt: "2026-07-21"
+  nextReviewAt: "2026-10-21"
+  reviewer: TravelBrain-Redaktion
+  changeNote: Erste fachlich geprüfte UK-Fassung mit ETA- und Haustierhinweisen
