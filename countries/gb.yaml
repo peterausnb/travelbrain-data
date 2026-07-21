@@ -52,12 +52,12 @@ content:
       - {de: Hunde benötigen vor der Einreise grundsätzlich eine dokumentierte Bandwurmbehandlung innerhalb des vorgeschriebenen Zeitfensters}
     sourceRefs: [govuk-pets]
   phrases:
-    - {category: greeting, de: Guten Tag, local: Hello}
-    - {category: hotel, de: Ich habe eine Reservierung., local: I have a reservation.}
-    - {category: restaurant, de: Die Rechnung, bitte., local: The bill, please.}
-    - {category: shopping, de: Kann ich mit Karte bezahlen?, local: Can I pay by card?}
-    - {category: doctor, de: Ich brauche einen Arzt., local: I need a doctor.}
-    - {category: emergency, de: Bitte rufen Sie den Notruf., local: Please call 999 or 112.}
+    - {category: greeting, de: "Guten Tag", local: "Hello"}
+    - {category: hotel, de: "Ich habe eine Reservierung.", local: "I have a reservation."}
+    - {category: restaurant, de: "Die Rechnung, bitte.", local: "The bill, please."}
+    - {category: shopping, de: "Kann ich mit Karte bezahlen?", local: "Can I pay by card?"}
+    - {category: doctor, de: "Ich brauche einen Arzt.", local: "I need a doctor."}
+    - {category: emergency, de: "Bitte rufen Sie den Notruf.", local: "Please call 999 or 112."}
 sources:
   - {id: aa-gb, title: "Vereinigtes Königreich: Reise- und Sicherheitshinweise", publisher: Auswärtiges Amt, type: official_government, url: "https://www.auswaertiges-amt.de/de/reiseundsicherheit/grossbritanniensicherheit-206408", accessedAt: "2026-07-21"}
   - {id: govuk-pets, title: Bring your pet to Great Britain step by step, publisher: GOV.UK, type: official_government, url: "https://www.gov.uk/bring-your-pet-to-great-britain", accessedAt: "2026-07-21"}
