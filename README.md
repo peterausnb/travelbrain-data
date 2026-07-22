@@ -2,7 +2,7 @@
 
 Öffentliche, redaktionell gepflegte Länderinformationen für die Android-App **TravelBrain**.
 
-> **Projektstatus:** Aufbauphase. Italien sowie die Transitpakete Österreich und Schweiz sind erstmals freigegeben; weitere Länder folgen schrittweise.
+> **Projektstatus:** MVP-Datenbestand aufgebaut. Die vorgesehenen 20 europäischen MVP-Länder sowie Transitkorridore sind redaktionell angelegt; freigegebene Inhalte werden automatisiert validiert, gebaut und veröffentlicht.
 
 ## Grundsätze
 
@@ -47,11 +47,7 @@ Der Build erzeugt nur freigegebene Länder und Korridore. Entwürfe bleiben voll
 5. Fachlich prüfen und `review.status` erst dann auf `approved` setzen.
 6. Nach Merge wird ein neues statisches Paket gebaut.
 
-Nach Aktivierung von GitHub Pages mit der Quelle **GitHub Actions** veröffentlicht jeder Merge nach `main` automatisch nach:
-
-- `https://peterausnb.github.io/travelbrain-data/manifest.json`
-- `https://peterausnb.github.io/travelbrain-data/countries/it.json`
-- `https://peterausnb.github.io/travelbrain-data/corridors.json`
+Nach Aktivierung von GitHub Pages mit der Quelle **GitHub Actions** veröffentlicht jeder Merge nach `main` automatisch das Manifest, die freigegebenen Länderpakete und die Transitkorridore unter `https://peterausnb.github.io/travelbrain-data/`.
 
 Version und Erstellungszeit werden aus dem auslösenden Commit abgeleitet. Ein erneut ausgeführter Build desselben Laufs erzeugt dadurch identische Dateien. Die App prüft vor der Übernahme die im Manifest hinterlegten SHA-256-Werte.
 
